@@ -37,7 +37,9 @@ class Ui_bat_conf_Dialog(object):
         bat_conf_Dialog.resize(320, 300)
         bat_conf_Dialog.setMouseTracking(True)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         bat_conf_Dialog.setWindowIcon(icon)
         bat_conf_Dialog.setModal(False)
         self.verticalLayout = QtWidgets.QVBoxLayout(bat_conf_Dialog)
@@ -52,14 +54,20 @@ class Ui_bat_conf_Dialog(object):
         self.lab_dialog_text.setObjectName("lab_dialog_text")
         self.verticalLayout.addWidget(self.lab_dialog_text)
         self.buttonBox_conf_dialog = QtWidgets.QDialogButtonBox(bat_conf_Dialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.buttonBox_conf_dialog.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.buttonBox_conf_dialog.sizePolicy().hasHeightForWidth()
+        )
         self.buttonBox_conf_dialog.setSizePolicy(sizePolicy)
         self.buttonBox_conf_dialog.setAutoFillBackground(False)
         self.buttonBox_conf_dialog.setOrientation(QtCore.Qt.Horizontal)
-        self.buttonBox_conf_dialog.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox_conf_dialog.setStandardButtons(
+            QtWidgets.QDialogButtonBox.Cancel | QtWidgets.QDialogButtonBox.Ok
+        )
         self.buttonBox_conf_dialog.setCenterButtons(True)
         self.buttonBox_conf_dialog.setObjectName("buttonBox_conf_dialog")
         self.verticalLayout.addWidget(self.buttonBox_conf_dialog)
@@ -71,14 +79,21 @@ class Ui_bat_conf_Dialog(object):
 
     def retranslateUi(self, bat_conf_Dialog):
         _translate = QtCore.QCoreApplication.translate
-        bat_conf_Dialog.setWindowTitle(_translate("bat_conf_Dialog", "Confirmation dialog"))
-        self.lab_dialog_text.setText(_translate("bat_conf_Dialog", "Multiplayer mode is now available!\n"
-"(up to 6 players per battle)\n"
-"\n"
-"Before clicking \'Send Request\',\n"
-"highlight everyone you\'d like to play with.\n"
-"\n"
-"Click Cancel to select more players, or\n"
-"\n"
-"Click OK to send the request\n"
-"to everyone highlighted..."))
+        bat_conf_Dialog.setWindowTitle(
+            _translate("bat_conf_Dialog", "Confirmation dialog")
+        )
+        self.lab_dialog_text.setText(
+            _translate(
+                "bat_conf_Dialog",
+                "Multiplayer mode is now available!\n"
+                "(up to 6 players per battle)\n"
+                "\n"
+                "Before clicking 'Send Request',\n"
+                "highlight everyone you'd like to play with.\n"
+                "\n"
+                "Click Cancel to select more players, or\n"
+                "\n"
+                "Click OK to send the request\n"
+                "to everyone highlighted...",
+            )
+        )

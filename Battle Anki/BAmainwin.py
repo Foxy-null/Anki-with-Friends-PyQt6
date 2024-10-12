@@ -35,7 +35,9 @@ class Ui_BatMainWin(object):
         BatMainWin.setObjectName("BatMainWin")
         BatMainWin.setEnabled(True)
         BatMainWin.resize(460, 410)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(BatMainWin.sizePolicy().hasHeightForWidth())
@@ -44,13 +46,21 @@ class Ui_BatMainWin(object):
         BatMainWin.setMaximumSize(QtCore.QSize(550, 410))
         BatMainWin.setBaseSize(QtCore.QSize(550, 410))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("../battle_anki_icon.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
         BatMainWin.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(BatMainWin)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.centralwidget.sizePolicy().hasHeightForWidth()
+        )
         self.centralwidget.setSizePolicy(sizePolicy)
         self.centralwidget.setMinimumSize(QtCore.QSize(410, 410))
         self.centralwidget.setMaximumSize(QtCore.QSize(550, 410))
@@ -61,10 +71,14 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.stackedWidget.sizePolicy().hasHeightForWidth()
+        )
         self.stackedWidget.setSizePolicy(sizePolicy)
         self.stackedWidget.setMinimumSize(QtCore.QSize(410, 410))
         self.stackedWidget.setMaximumSize(QtCore.QSize(550, 410))
@@ -72,7 +86,9 @@ class Ui_BatMainWin(object):
         self.stackedWidget.setMouseTracking(True)
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.page_1.sizePolicy().hasHeightForWidth())
@@ -87,7 +103,9 @@ class Ui_BatMainWin(object):
         self.verticalLayout_8.setSpacing(0)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_3.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.horizontalLayout_3.setSizeConstraint(
+            QtWidgets.QLayout.SetDefaultConstraint
+        )
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
@@ -98,10 +116,14 @@ class Ui_BatMainWin(object):
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.label_blank_d = myLabel(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_blank_d.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.label_blank_d.sizePolicy().hasHeightForWidth()
+        )
         self.label_blank_d.setSizePolicy(sizePolicy)
         self.label_blank_d.setMinimumSize(QtCore.QSize(20, 20))
         self.label_blank_d.setMaximumSize(QtCore.QSize(20, 20))
@@ -117,23 +139,33 @@ class Ui_BatMainWin(object):
         self.label_blank_d.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_blank_d.setObjectName("label_blank_d")
         self.verticalLayout_4.addWidget(self.label_blank_d)
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_4.addItem(spacerItem)
         self.horizontalLayout_5.addLayout(self.verticalLayout_4)
-        spacerItem1 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_5.addItem(spacerItem1)
         self.lab_logo_home = QtWidgets.QLabel(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_logo_home.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_logo_home.sizePolicy().hasHeightForWidth()
+        )
         self.lab_logo_home.setSizePolicy(sizePolicy)
         self.lab_logo_home.setMinimumSize(QtCore.QSize(20, 20))
         self.lab_logo_home.setMaximumSize(QtCore.QSize(45, 45))
         self.lab_logo_home.setText("")
         self.lab_logo_home.setObjectName("lab_logo_home")
         self.horizontalLayout_5.addWidget(self.lab_logo_home)
-        spacerItem2 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_5.addItem(spacerItem2)
         self.horizontalLayout_5.setStretch(1, 2)
         self.horizontalLayout_5.setStretch(2, 2)
@@ -148,10 +180,14 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_20.setSpacing(0)
         self.horizontalLayout_20.setObjectName("horizontalLayout_20")
         self.label_blank_r = myLabel(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_blank_r.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.label_blank_r.sizePolicy().hasHeightForWidth()
+        )
         self.label_blank_r.setSizePolicy(sizePolicy)
         self.label_blank_r.setMinimumSize(QtCore.QSize(19, 35))
         self.label_blank_r.setMaximumSize(QtCore.QSize(19, 35))
@@ -160,13 +196,17 @@ class Ui_BatMainWin(object):
         font = QtGui.QFont()
         font.setPointSize(14)
         self.label_blank_r.setFont(font)
-        self.label_blank_r.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_blank_r.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.label_blank_r.setIndent(-1)
         self.label_blank_r.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_blank_r.setObjectName("label_blank_r")
         self.horizontalLayout_20.addWidget(self.label_blank_r)
         self.lab_welcome = QtWidgets.QLabel(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lab_welcome.sizePolicy().hasHeightForWidth())
@@ -180,9 +220,13 @@ class Ui_BatMainWin(object):
         self.lab_welcome.setInputMethodHints(QtCore.Qt.ImhNone)
         self.lab_welcome.setTextFormat(QtCore.Qt.RichText)
         self.lab_welcome.setScaledContents(False)
-        self.lab_welcome.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lab_welcome.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
         self.lab_welcome.setOpenExternalLinks(True)
-        self.lab_welcome.setTextInteractionFlags(QtCore.Qt.LinksAccessibleByKeyboard|QtCore.Qt.LinksAccessibleByMouse)
+        self.lab_welcome.setTextInteractionFlags(
+            QtCore.Qt.LinksAccessibleByKeyboard | QtCore.Qt.LinksAccessibleByMouse
+        )
         self.lab_welcome.setObjectName("lab_welcome")
         self.horizontalLayout_20.addWidget(self.lab_welcome)
         self.verticalLayout_7.addLayout(self.horizontalLayout_20)
@@ -191,20 +235,28 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_6.setContentsMargins(-1, -1, 0, -1)
         self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        spacerItem3 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem3 = QtWidgets.QSpacerItem(
+            10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_6.addItem(spacerItem3)
         self.lab_logo_home_2 = QtWidgets.QLabel(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_logo_home_2.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_logo_home_2.sizePolicy().hasHeightForWidth()
+        )
         self.lab_logo_home_2.setSizePolicy(sizePolicy)
         self.lab_logo_home_2.setMinimumSize(QtCore.QSize(20, 20))
         self.lab_logo_home_2.setMaximumSize(QtCore.QSize(45, 45))
         self.lab_logo_home_2.setText("")
         self.lab_logo_home_2.setObjectName("lab_logo_home_2")
         self.horizontalLayout_6.addWidget(self.lab_logo_home_2)
-        spacerItem4 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem4 = QtWidgets.QSpacerItem(
+            10, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_6.addItem(spacerItem4)
         self.horizontalLayout_6.setStretch(0, 1)
         self.horizontalLayout_6.setStretch(1, 2)
@@ -227,10 +279,14 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_15.setObjectName("horizontalLayout_15")
         self.tableWidget_users_connected = QtWidgets.QTableWidget(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.tableWidget_users_connected.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.tableWidget_users_connected.sizePolicy().hasHeightForWidth()
+        )
         self.tableWidget_users_connected.setSizePolicy(sizePolicy)
         self.tableWidget_users_connected.setMinimumSize(QtCore.QSize(260, 270))
         self.tableWidget_users_connected.setMaximumSize(QtCore.QSize(340, 270))
@@ -249,7 +305,9 @@ class Ui_BatMainWin(object):
         font = QtGui.QFont()
         font.setPointSize(11)
         self.tableWidget_users_connected.setFont(font)
-        self.tableWidget_users_connected.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tableWidget_users_connected.viewport().setProperty(
+            "cursor", QtGui.QCursor(QtCore.Qt.ArrowCursor)
+        )
         self.tableWidget_users_connected.setMouseTracking(True)
         self.tableWidget_users_connected.setFocusPolicy(QtCore.Qt.NoFocus)
         self.tableWidget_users_connected.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
@@ -258,19 +316,31 @@ class Ui_BatMainWin(object):
         self.tableWidget_users_connected.setFrameShadow(QtWidgets.QFrame.Plain)
         self.tableWidget_users_connected.setLineWidth(2)
         self.tableWidget_users_connected.setMidLineWidth(0)
-        self.tableWidget_users_connected.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableWidget_users_connected.setHorizontalScrollBarPolicy(
+            QtCore.Qt.ScrollBarAlwaysOff
+        )
         self.tableWidget_users_connected.setAutoScroll(False)
         self.tableWidget_users_connected.setAutoScrollMargin(0)
-        self.tableWidget_users_connected.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.tableWidget_users_connected.setEditTriggers(
+            QtWidgets.QAbstractItemView.NoEditTriggers
+        )
         self.tableWidget_users_connected.setTabKeyNavigation(False)
         self.tableWidget_users_connected.setProperty("showDropIndicator", False)
         self.tableWidget_users_connected.setDragDropOverwriteMode(False)
         self.tableWidget_users_connected.setAlternatingRowColors(False)
-        self.tableWidget_users_connected.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
-        self.tableWidget_users_connected.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.tableWidget_users_connected.setSelectionMode(
+            QtWidgets.QAbstractItemView.SingleSelection
+        )
+        self.tableWidget_users_connected.setSelectionBehavior(
+            QtWidgets.QAbstractItemView.SelectRows
+        )
         self.tableWidget_users_connected.setTextElideMode(QtCore.Qt.ElideNone)
-        self.tableWidget_users_connected.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
-        self.tableWidget_users_connected.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+        self.tableWidget_users_connected.setVerticalScrollMode(
+            QtWidgets.QAbstractItemView.ScrollPerPixel
+        )
+        self.tableWidget_users_connected.setHorizontalScrollMode(
+            QtWidgets.QAbstractItemView.ScrollPerPixel
+        )
         self.tableWidget_users_connected.setShowGrid(False)
         self.tableWidget_users_connected.setWordWrap(False)
         self.tableWidget_users_connected.setCornerButtonEnabled(False)
@@ -289,12 +359,16 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_15.addWidget(self.tableWidget_users_connected)
         self.verticalLayout_6.addLayout(self.horizontalLayout_15)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.horizontalLayout_2.setSizeConstraint(
+            QtWidgets.QLayout.SetDefaultConstraint
+        )
         self.horizontalLayout_2.setContentsMargins(5, 13, 5, 10)
         self.horizontalLayout_2.setSpacing(5)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.but_away = QtWidgets.QPushButton(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.but_away.sizePolicy().hasHeightForWidth())
@@ -308,7 +382,9 @@ class Ui_BatMainWin(object):
         self.but_away.setObjectName("but_away")
         self.horizontalLayout_2.addWidget(self.but_away)
         self.but_badge = QtWidgets.QPushButton(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.but_badge.sizePolicy().hasHeightForWidth())
@@ -323,7 +399,9 @@ class Ui_BatMainWin(object):
         self.but_badge.setObjectName("but_badge")
         self.horizontalLayout_2.addWidget(self.but_badge)
         self.but_join = QtWidgets.QPushButton(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.but_join.sizePolicy().hasHeightForWidth())
@@ -337,7 +415,9 @@ class Ui_BatMainWin(object):
         self.but_join.setObjectName("but_join")
         self.horizontalLayout_2.addWidget(self.but_join)
         self.but_sendittt = QtWidgets.QPushButton(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.but_sendittt.sizePolicy().hasHeightForWidth())
@@ -356,7 +436,9 @@ class Ui_BatMainWin(object):
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.frame = QtWidgets.QFrame(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
@@ -372,13 +454,17 @@ class Ui_BatMainWin(object):
         self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_14.setSpacing(8)
         self.verticalLayout_14.setObjectName("verticalLayout_14")
-        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem5 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_14.addItem(spacerItem5)
         self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_9.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_9.setSpacing(0)
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
-        spacerItem6 = QtWidgets.QSpacerItem(0, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem6 = QtWidgets.QSpacerItem(
+            0, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_9.addItem(spacerItem6)
         self.lab_pg1_opt_tit = QtWidgets.QLabel(self.frame)
         self.lab_pg1_opt_tit.setEnabled(False)
@@ -386,7 +472,9 @@ class Ui_BatMainWin(object):
         font.setPointSize(11)
         font.setUnderline(True)
         self.lab_pg1_opt_tit.setFont(font)
-        self.lab_pg1_opt_tit.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_opt_tit.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_opt_tit.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.lab_pg1_opt_tit.setObjectName("lab_pg1_opt_tit")
         self.horizontalLayout_9.addWidget(self.lab_pg1_opt_tit)
@@ -396,18 +484,27 @@ class Ui_BatMainWin(object):
         font.setPointSize(11)
         font.setUnderline(True)
         self.lab_pg1_opt_tit_2.setFont(font)
-        self.lab_pg1_opt_tit_2.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_opt_tit_2.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_opt_tit_2.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.lab_pg1_opt_tit_2.setObjectName("lab_pg1_opt_tit_2")
         self.horizontalLayout_9.addWidget(self.lab_pg1_opt_tit_2)
-        spacerItem7 = QtWidgets.QSpacerItem(0, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem7 = QtWidgets.QSpacerItem(
+            0, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_9.addItem(spacerItem7)
         self.verticalLayout_14.addLayout(self.horizontalLayout_9)
         self.numcards_layout = QtWidgets.QHBoxLayout()
         self.numcards_layout.setContentsMargins(0, -1, 0, -1)
         self.numcards_layout.setSpacing(5)
         self.numcards_layout.setObjectName("numcards_layout")
-        spacerItem8 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem8 = QtWidgets.QSpacerItem(
+            10,
+            20,
+            QtWidgets.QSizePolicy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Minimum,
+        )
         self.numcards_layout.addItem(spacerItem8)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout()
         self.verticalLayout_3.setSpacing(0)
@@ -417,10 +514,14 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_11.setSpacing(6)
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
         self.spinbox_bdecksize_bw = QtWidgets.QSpinBox(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.spinbox_bdecksize_bw.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.spinbox_bdecksize_bw.sizePolicy().hasHeightForWidth()
+        )
         self.spinbox_bdecksize_bw.setSizePolicy(sizePolicy)
         self.spinbox_bdecksize_bw.setMinimumSize(QtCore.QSize(80, 25))
         self.spinbox_bdecksize_bw.setMaximumSize(QtCore.QSize(100, 25))
@@ -442,10 +543,14 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_19.setObjectName("horizontalLayout_19")
         self.lab_max_cards = QtWidgets.QLabel(self.frame)
         self.lab_max_cards.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_max_cards.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_max_cards.sizePolicy().hasHeightForWidth()
+        )
         self.lab_max_cards.setSizePolicy(sizePolicy)
         self.lab_max_cards.setMinimumSize(QtCore.QSize(80, 13))
         self.lab_max_cards.setMaximumSize(QtCore.QSize(80, 13))
@@ -459,34 +564,51 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_19.addWidget(self.lab_max_cards)
         self.verticalLayout_3.addLayout(self.horizontalLayout_19)
         self.numcards_layout.addLayout(self.verticalLayout_3)
-        spacerItem9 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem9 = QtWidgets.QSpacerItem(
+            10,
+            20,
+            QtWidgets.QSizePolicy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Minimum,
+        )
         self.numcards_layout.addItem(spacerItem9)
         self.verticalLayout_14.addLayout(self.numcards_layout)
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_10.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_10.setSpacing(6)
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
-        spacerItem10 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem10 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_10.addItem(spacerItem10)
         self.lab_pg1_cards = QtWidgets.QLabel(self.frame)
         self.lab_pg1_cards.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_cards.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_cards.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_cards.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_cards.setFont(font)
-        self.lab_pg1_cards.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_cards.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_cards.setObjectName("lab_pg1_cards")
         self.horizontalLayout_10.addWidget(self.lab_pg1_cards)
         self.lab_pg1_cardtype = QtWidgets.QLabel(self.frame)
         self.lab_pg1_cardtype.setEnabled(True)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_cardtype.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_cardtype.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_cardtype.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -495,34 +617,48 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_10.addWidget(self.lab_pg1_cardtype)
         self.lab_pg1_tit_cards = QtWidgets.QLabel(self.frame)
         self.lab_pg1_tit_cards.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_tit_cards.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_tit_cards.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_tit_cards.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_tit_cards.setFont(font)
-        self.lab_pg1_tit_cards.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_tit_cards.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_tit_cards.setObjectName("lab_pg1_tit_cards")
         self.horizontalLayout_10.addWidget(self.lab_pg1_tit_cards)
-        spacerItem11 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem11 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_10.addItem(spacerItem11)
         self.verticalLayout_14.addLayout(self.horizontalLayout_10)
         self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_17.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_17.setObjectName("horizontalLayout_17")
-        spacerItem12 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem12 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_17.addItem(spacerItem12)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setContentsMargins(-1, -1, 0, 0)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.lab_pg1_due_today = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_due_today.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_due_today.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_due_today.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -532,153 +668,225 @@ class Ui_BatMainWin(object):
         self.verticalLayout_2.addWidget(self.lab_pg1_due_today)
         self.lab_pg1_overdues = QtWidgets.QLabel(self.frame)
         self.lab_pg1_overdues.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_overdues.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_overdues.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_overdues.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(8)
         self.lab_pg1_overdues.setFont(font)
-        self.lab_pg1_overdues.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_overdues.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_overdues.setObjectName("lab_pg1_overdues")
         self.verticalLayout_2.addWidget(self.lab_pg1_overdues)
         self.horizontalLayout_17.addLayout(self.verticalLayout_2)
-        spacerItem13 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem13 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_17.addItem(spacerItem13)
         self.verticalLayout_14.addLayout(self.horizontalLayout_17)
         self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_13.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_13.setObjectName("horizontalLayout_13")
-        spacerItem14 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem14 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_13.addItem(spacerItem14)
         self.lab_pg1_cardorder = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_cardorder.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_cardorder.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_cardorder.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(8)
         self.lab_pg1_cardorder.setFont(font)
-        self.lab_pg1_cardorder.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_cardorder.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_cardorder.setObjectName("lab_pg1_cardorder")
         self.horizontalLayout_13.addWidget(self.lab_pg1_cardorder)
         self.lab_pg1_tit_cardorder = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_tit_cardorder.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_tit_cardorder.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_tit_cardorder.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(8)
         self.lab_pg1_tit_cardorder.setFont(font)
-        self.lab_pg1_tit_cardorder.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_tit_cardorder.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_tit_cardorder.setObjectName("lab_pg1_tit_cardorder")
         self.horizontalLayout_13.addWidget(self.lab_pg1_tit_cardorder)
-        spacerItem15 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem15 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_13.addItem(spacerItem15)
         self.verticalLayout_14.addLayout(self.horizontalLayout_13)
         self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_16.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_16.setSpacing(6)
         self.horizontalLayout_16.setObjectName("horizontalLayout_16")
-        spacerItem16 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem16 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_16.addItem(spacerItem16)
         self.lab_pg1_resched = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_resched.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_resched.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_resched.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_resched.setFont(font)
-        self.lab_pg1_resched.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_resched.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_resched.setObjectName("lab_pg1_resched")
         self.horizontalLayout_16.addWidget(self.lab_pg1_resched)
         self.lab_pg1_tit_resched = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_tit_resched.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_tit_resched.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_tit_resched.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_tit_resched.setFont(font)
-        self.lab_pg1_tit_resched.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_tit_resched.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_tit_resched.setWordWrap(False)
         self.lab_pg1_tit_resched.setObjectName("lab_pg1_tit_resched")
         self.horizontalLayout_16.addWidget(self.lab_pg1_tit_resched)
-        spacerItem17 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem17 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_16.addItem(spacerItem17)
         self.verticalLayout_14.addLayout(self.horizontalLayout_16)
         self.horizontalLayout_14 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_14.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_14.setObjectName("horizontalLayout_14")
-        spacerItem18 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem18 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_14.addItem(spacerItem18)
         self.lab_pg1_matched = QtWidgets.QLabel(self.frame)
         self.lab_pg1_matched.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_matched.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_matched.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_matched.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_matched.setFont(font)
-        self.lab_pg1_matched.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_matched.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_matched.setObjectName("lab_pg1_matched")
         self.horizontalLayout_14.addWidget(self.lab_pg1_matched)
         self.lab_pg1_tit_matched = QtWidgets.QLabel(self.frame)
         self.lab_pg1_tit_matched.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_tit_matched.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_tit_matched.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_tit_matched.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_tit_matched.setFont(font)
-        self.lab_pg1_tit_matched.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_tit_matched.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_tit_matched.setObjectName("lab_pg1_tit_matched")
         self.horizontalLayout_14.addWidget(self.lab_pg1_tit_matched)
-        spacerItem19 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem19 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_14.addItem(spacerItem19)
         self.verticalLayout_14.addLayout(self.horizontalLayout_14)
         self.horizontalLayout_18 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_18.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_18.setSpacing(6)
         self.horizontalLayout_18.setObjectName("horizontalLayout_18")
-        spacerItem20 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem20 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_18.addItem(spacerItem20)
         self.lab_pg1_joiners = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_joiners.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_joiners.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_joiners.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lab_pg1_joiners.setFont(font)
-        self.lab_pg1_joiners.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_joiners.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_joiners.setObjectName("lab_pg1_joiners")
         self.horizontalLayout_18.addWidget(self.lab_pg1_joiners)
         self.lab_pg1_tit_joiners = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_pg1_tit_joiners.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_pg1_tit_joiners.sizePolicy().hasHeightForWidth()
+        )
         self.lab_pg1_tit_joiners.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(8)
         self.lab_pg1_tit_joiners.setFont(font)
-        self.lab_pg1_tit_joiners.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_pg1_tit_joiners.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_pg1_tit_joiners.setWordWrap(False)
         self.lab_pg1_tit_joiners.setObjectName("lab_pg1_tit_joiners")
         self.horizontalLayout_18.addWidget(self.lab_pg1_tit_joiners)
-        spacerItem21 = QtWidgets.QSpacerItem(0, 0, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem21 = QtWidgets.QSpacerItem(
+            0, 0, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_18.addItem(spacerItem21)
         self.verticalLayout_14.addLayout(self.horizontalLayout_18)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
@@ -686,7 +894,9 @@ class Ui_BatMainWin(object):
         self.horizontalLayout_7.setSpacing(6)
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.but_options = QtWidgets.QPushButton(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.but_options.sizePolicy().hasHeightForWidth())
@@ -695,20 +905,28 @@ class Ui_BatMainWin(object):
         self.but_options.setObjectName("but_options")
         self.horizontalLayout_7.addWidget(self.but_options)
         self.verticalLayout_14.addLayout(self.horizontalLayout_7)
-        spacerItem22 = QtWidgets.QSpacerItem(20, 120, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem22 = QtWidgets.QSpacerItem(
+            20, 120, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_14.addItem(spacerItem22)
         self.verticalLayout.addWidget(self.frame)
         self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_12.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_12.setSpacing(0)
         self.horizontalLayout_12.setObjectName("horizontalLayout_12")
-        spacerItem23 = QtWidgets.QSpacerItem(40, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem23 = QtWidgets.QSpacerItem(
+            40, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_12.addItem(spacerItem23)
         self.label_version = myLabel(self.page_1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_version.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.label_version.sizePolicy().hasHeightForWidth()
+        )
         self.label_version.setSizePolicy(sizePolicy)
         self.label_version.setMinimumSize(QtCore.QSize(0, 9))
         self.label_version.setMaximumSize(QtCore.QSize(16777215, 10))
@@ -717,7 +935,9 @@ class Ui_BatMainWin(object):
         font = QtGui.QFont()
         font.setPointSize(7)
         self.label_version.setFont(font)
-        self.label_version.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing)
+        self.label_version.setAlignment(
+            QtCore.Qt.AlignBottom | QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing
+        )
         self.label_version.setObjectName("label_version")
         self.horizontalLayout_12.addWidget(self.label_version)
         self.verticalLayout.addLayout(self.horizontalLayout_12)
@@ -735,7 +955,9 @@ class Ui_BatMainWin(object):
         self.frame_3.setObjectName("frame_3")
         self.verticalLayout_10 = QtWidgets.QVBoxLayout(self.frame_3)
         self.verticalLayout_10.setObjectName("verticalLayout_10")
-        spacerItem24 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem24 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_10.addItem(spacerItem24)
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setContentsMargins(-1, -1, -1, 0)
@@ -791,14 +1013,20 @@ class Ui_BatMainWin(object):
         self.verticalLayout_22.addWidget(self.lab_link_pg2_3)
         self.horizontalLayout_8.addLayout(self.verticalLayout_22)
         self.verticalLayout_10.addLayout(self.horizontalLayout_8)
-        spacerItem25 = QtWidgets.QSpacerItem(0, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem25 = QtWidgets.QSpacerItem(
+            0, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_10.addItem(spacerItem25)
         self.verticalLayout_11.addWidget(self.frame_3)
         self.progressBar_waiting = QtWidgets.QProgressBar(self.page_2)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.progressBar_waiting.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.progressBar_waiting.sizePolicy().hasHeightForWidth()
+        )
         self.progressBar_waiting.setSizePolicy(sizePolicy)
         self.progressBar_waiting.setMinimumSize(QtCore.QSize(341, 31))
         self.progressBar_waiting.setMaximumSize(QtCore.QSize(341, 31))
@@ -808,8 +1036,12 @@ class Ui_BatMainWin(object):
         self.progressBar_waiting.setTextVisible(False)
         self.progressBar_waiting.setInvertedAppearance(False)
         self.progressBar_waiting.setObjectName("progressBar_waiting")
-        self.verticalLayout_11.addWidget(self.progressBar_waiting, 0, QtCore.Qt.AlignHCenter)
-        spacerItem26 = QtWidgets.QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.verticalLayout_11.addWidget(
+            self.progressBar_waiting, 0, QtCore.Qt.AlignHCenter
+        )
+        spacerItem26 = QtWidgets.QSpacerItem(
+            20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         self.verticalLayout_11.addItem(spacerItem26)
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
@@ -817,10 +1049,14 @@ class Ui_BatMainWin(object):
         self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.page_3)
         self.verticalLayout_12.setContentsMargins(30, 0, 30, -1)
         self.verticalLayout_12.setObjectName("verticalLayout_12")
-        spacerItem27 = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem27 = QtWidgets.QSpacerItem(
+            20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_12.addItem(spacerItem27)
         self.lab_bat_tit = QtWidgets.QLabel(self.page_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lab_bat_tit.sizePolicy().hasHeightForWidth())
@@ -834,13 +1070,19 @@ class Ui_BatMainWin(object):
         self.lab_bat_tit.setAlignment(QtCore.Qt.AlignCenter)
         self.lab_bat_tit.setObjectName("lab_bat_tit")
         self.verticalLayout_12.addWidget(self.lab_bat_tit)
-        spacerItem28 = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem28 = QtWidgets.QSpacerItem(
+            20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_12.addItem(spacerItem28)
         self.progressBar_p1 = QtWidgets.QProgressBar(self.page_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.progressBar_p1.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.progressBar_p1.sizePolicy().hasHeightForWidth()
+        )
         self.progressBar_p1.setSizePolicy(sizePolicy)
         self.progressBar_p1.setMinimumSize(QtCore.QSize(300, 61))
         self.progressBar_p1.setMaximumSize(QtCore.QSize(510, 61))
@@ -854,14 +1096,20 @@ class Ui_BatMainWin(object):
         self.progressBar_p1.setTextDirection(QtWidgets.QProgressBar.TopToBottom)
         self.progressBar_p1.setObjectName("progressBar_p1")
         self.verticalLayout_12.addWidget(self.progressBar_p1)
-        spacerItem29 = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem29 = QtWidgets.QSpacerItem(
+            20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_12.addItem(spacerItem29)
         self.progressBar_p2 = QtWidgets.QProgressBar(self.page_3)
         self.progressBar_p2.setEnabled(True)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.progressBar_p2.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.progressBar_p2.sizePolicy().hasHeightForWidth()
+        )
         self.progressBar_p2.setSizePolicy(sizePolicy)
         self.progressBar_p2.setMinimumSize(QtCore.QSize(300, 61))
         self.progressBar_p2.setMaximumSize(QtCore.QSize(510, 61))
@@ -876,7 +1124,9 @@ class Ui_BatMainWin(object):
         self.progressBar_p2.setTextDirection(QtWidgets.QProgressBar.BottomToTop)
         self.progressBar_p2.setObjectName("progressBar_p2")
         self.verticalLayout_12.addWidget(self.progressBar_p2)
-        spacerItem30 = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem30 = QtWidgets.QSpacerItem(
+            20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout_12.addItem(spacerItem30)
         self.stackedWidget.addWidget(self.page_3)
         self.horizontalLayout_4.addWidget(self.stackedWidget)
@@ -890,16 +1140,17 @@ class Ui_BatMainWin(object):
         _translate = QtCore.QCoreApplication.translate
         BatMainWin.setWindowTitle(_translate("BatMainWin", "Battle Anki"))
         self.label_blank_r.setText(_translate("BatMainWin", "W"))
-        self.lab_welcome.setText(_translate("BatMainWin", "elcome to <a href=\"https://ankiweb.net/shared/info/613520216\">Battle Anki</a>!"))
+        self.lab_welcome.setText(
+            _translate(
+                "BatMainWin",
+                'elcome to <a href="https://ankiweb.net/shared/info/613520216">Battle Anki</a>!',
+            )
+        )
         self.tableWidget_users_connected.setSortingEnabled(True)
-        self.but_away.setText(_translate("BatMainWin", "Away\n"
-"Status"))
-        self.but_badge.setText(_translate("BatMainWin", "Show\n"
-"Badge"))
-        self.but_join.setText(_translate("BatMainWin", "Join\n"
-"Battle"))
-        self.but_sendittt.setText(_translate("BatMainWin", "Send\n"
-"Request"))
+        self.but_away.setText(_translate("BatMainWin", "Away\n" "Status"))
+        self.but_badge.setText(_translate("BatMainWin", "Show\n" "Badge"))
+        self.but_join.setText(_translate("BatMainWin", "Join\n" "Battle"))
+        self.but_sendittt.setText(_translate("BatMainWin", "Send\n" "Request"))
         self.lab_pg1_opt_tit.setText(_translate("BatMainWin", "Current"))
         self.lab_pg1_opt_tit_2.setText(_translate("BatMainWin", "Options:"))
         self.spinbox_bdecksize_bw.setSuffix(_translate("BatMainWin", " cards"))
@@ -916,12 +1167,30 @@ class Ui_BatMainWin(object):
         self.lab_pg1_matched.setText(_translate("BatMainWin", "Unmatched"))
         self.lab_pg1_tit_matched.setText(_translate("BatMainWin", "Deck"))
         self.lab_pg1_joiners.setText(_translate("BatMainWin", "Yes"))
-        self.lab_pg1_tit_joiners.setText(_translate("BatMainWin", "Accept joins in battle"))
+        self.lab_pg1_tit_joiners.setText(
+            _translate("BatMainWin", "Accept joins in battle")
+        )
         self.but_options.setText(_translate("BatMainWin", "Change Options"))
         self.label_version.setText(_translate("BatMainWin", "v2.08"))
-        self.lab_link_pg2.setText(_translate("BatMainWin", "<a href=\"https://www.usmle.org/step-1/\">USMLE Step 1 Website</a>"))
-        self.lab_link_pg2_2.setText(_translate("BatMainWin", "<a href=\"https://www.prometric.com/site-status?__hstc=46213176.fa91e3a14cbb7194a16283fe8a740005.1609850017232.1609850017232.1609850017232.1&__hssc=46213176.1.1609850017233&__hsfp=2324073213\">Prometric Site Status Page</a>"))
-        self.lab_link_pg2_3.setText(_translate("BatMainWin", "<a href=\"https://www.uptodate.com/login\">UpToDate</a>"))
+        self.lab_link_pg2.setText(
+            _translate(
+                "BatMainWin",
+                '<a href="https://www.usmle.org/step-1/">USMLE Step 1 Website</a>',
+            )
+        )
+        self.lab_link_pg2_2.setText(
+            _translate(
+                "BatMainWin",
+                '<a href="https://www.prometric.com/site-status?__hstc=46213176.fa91e3a14cbb7194a16283fe8a740005.1609850017232.1609850017232.1609850017232.1&__hssc=46213176.1.1609850017233&__hsfp=2324073213">Prometric Site Status Page</a>',
+            )
+        )
+        self.lab_link_pg2_3.setText(
+            _translate(
+                "BatMainWin", '<a href="https://www.uptodate.com/login">UpToDate</a>'
+            )
+        )
         self.progressBar_waiting.setFormat(_translate("BatMainWin", "%p%"))
         self.lab_bat_tit.setText(_translate("BatMainWin", "The Anki Battle is on!!!"))
+
+
 from .myclass import myLabel

@@ -66,7 +66,7 @@ def colorscale(hexstr, scalefactor):
     >>> colorscale("#4F75D2", 1)
     #4F75D2
     """
-    hexstr = hexstr.strip('#')
+    hexstr = hexstr.strip("#")
     if scalefactor < 0 or len(hexstr) != 6:
         return hexstr
     r, g, b = int(hexstr[:2], 16), int(hexstr[2:4], 16), int(hexstr[4:], 16)

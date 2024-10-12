@@ -34,31 +34,45 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(240, 150)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Dialog.sizePolicy().hasHeightForWidth())
         Dialog.setSizePolicy(sizePolicy)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         Dialog.setWindowIcon(icon)
         self.buttonBox_reb_comms = QtWidgets.QDialogButtonBox(Dialog)
         self.buttonBox_reb_comms.setGeometry(QtCore.QRect(40, 100, 161, 32))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.buttonBox_reb_comms.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.buttonBox_reb_comms.sizePolicy().hasHeightForWidth()
+        )
         self.buttonBox_reb_comms.setSizePolicy(sizePolicy)
         self.buttonBox_reb_comms.setOrientation(QtCore.Qt.Horizontal)
-        self.buttonBox_reb_comms.setStandardButtons(QtWidgets.QDialogButtonBox.Help|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox_reb_comms.setStandardButtons(
+            QtWidgets.QDialogButtonBox.Help | QtWidgets.QDialogButtonBox.Ok
+        )
         self.buttonBox_reb_comms.setCenterButtons(True)
         self.buttonBox_reb_comms.setObjectName("buttonBox_reb_comms")
         self.lab_reb_comms_title = QtWidgets.QLabel(Dialog)
         self.lab_reb_comms_title.setGeometry(QtCore.QRect(40, 20, 161, 61))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_reb_comms_title.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_reb_comms_title.sizePolicy().hasHeightForWidth()
+        )
         self.lab_reb_comms_title.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(11)
@@ -74,6 +88,6 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Information"))
-        self.lab_reb_comms_title.setText(_translate("Dialog", "They accepted!\n"
-"\n"
-"The game has started!"))
+        self.lab_reb_comms_title.setText(
+            _translate("Dialog", "They accepted!\n" "\n" "The game has started!")
+        )

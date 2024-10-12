@@ -26,7 +26,9 @@ class Ui_Dialog_ty(object):
         Dialog_ty.setObjectName("Dialog_ty")
         Dialog_ty.resize(315, 160)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         Dialog_ty.setWindowIcon(icon)
         self.lab_text = QtWidgets.QLabel(Dialog_ty)
         self.lab_text.setGeometry(QtCore.QRect(40, 20, 241, 61))
@@ -55,7 +57,17 @@ class Ui_Dialog_ty(object):
     def retranslateUi(self, Dialog_ty):
         _translate = QtCore.QCoreApplication.translate
         Dialog_ty.setWindowTitle(_translate("Dialog_ty", "TYVM from Battle Anki"))
-        self.lab_text.setText(_translate("Dialog_ty", "Thank you for playing Battle Anki!\n"
-"If you enjoyed the experience,\n"
-"buy me a coffee?"))
-        self.lab_link.setText(_translate("Dialog_ty", "<a href=\"https://ko-fi.com/battleanki\">Ko-fi.com/BattleAnki</a>"))
+        self.lab_text.setText(
+            _translate(
+                "Dialog_ty",
+                "Thank you for playing Battle Anki!\n"
+                "If you enjoyed the experience,\n"
+                "buy me a coffee?",
+            )
+        )
+        self.lab_link.setText(
+            _translate(
+                "Dialog_ty",
+                '<a href="https://ko-fi.com/battleanki">Ko-fi.com/BattleAnki</a>',
+            )
+        )

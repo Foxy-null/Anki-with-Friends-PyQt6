@@ -35,7 +35,9 @@ class Ui_OptionsDialog(object):
         OptionsDialog.setObjectName("OptionsDialog")
         OptionsDialog.setWindowModality(QtCore.Qt.ApplicationModal)
         OptionsDialog.resize(270, 480)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(OptionsDialog.sizePolicy().hasHeightForWidth())
@@ -46,7 +48,9 @@ class Ui_OptionsDialog(object):
         font.setWeight(50)
         OptionsDialog.setFont(font)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         OptionsDialog.setWindowIcon(icon)
         self.verticalLayout = QtWidgets.QVBoxLayout(OptionsDialog)
         self.verticalLayout.setContentsMargins(5, 5, 5, 5)
@@ -56,7 +60,9 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_6.setContentsMargins(-1, 6, -1, 0)
         self.verticalLayout_6.setObjectName("verticalLayout_6")
         self.lab_opt_tit = QtWidgets.QLabel(OptionsDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Maximum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lab_opt_tit.sizePolicy().hasHeightForWidth())
@@ -70,7 +76,9 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_2.setContentsMargins(-1, 0, -1, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.frame = QtWidgets.QFrame(OptionsDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
@@ -92,7 +100,12 @@ class Ui_OptionsDialog(object):
         self.numcards_layout.setContentsMargins(0, -1, 0, -1)
         self.numcards_layout.setSpacing(5)
         self.numcards_layout.setObjectName("numcards_layout")
-        spacerItem = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(
+            20,
+            20,
+            QtWidgets.QSizePolicy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Minimum,
+        )
         self.numcards_layout.addItem(spacerItem)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout()
         self.verticalLayout_3.setSpacing(0)
@@ -101,10 +114,14 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_4.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.spinbox_bdecksize_opts = QtWidgets.QSpinBox(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.spinbox_bdecksize_opts.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.spinbox_bdecksize_opts.sizePolicy().hasHeightForWidth()
+        )
         self.spinbox_bdecksize_opts.setSizePolicy(sizePolicy)
         self.spinbox_bdecksize_opts.setMinimumSize(QtCore.QSize(80, 25))
         self.spinbox_bdecksize_opts.setMaximumSize(QtCore.QSize(100, 25))
@@ -115,7 +132,9 @@ class Ui_OptionsDialog(object):
         font.setWeight(50)
         self.spinbox_bdecksize_opts.setFont(font)
         self.spinbox_bdecksize_opts.setMouseTracking(True)
-        self.spinbox_bdecksize_opts.setButtonSymbols(QtWidgets.QAbstractSpinBox.PlusMinus)
+        self.spinbox_bdecksize_opts.setButtonSymbols(
+            QtWidgets.QAbstractSpinBox.PlusMinus
+        )
         self.spinbox_bdecksize_opts.setMaximum(500)
         self.spinbox_bdecksize_opts.setProperty("value", 100)
         self.spinbox_bdecksize_opts.setObjectName("spinbox_bdecksize_opts")
@@ -125,10 +144,14 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_3.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.lab_max_cards = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_max_cards.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_max_cards.sizePolicy().hasHeightForWidth()
+        )
         self.lab_max_cards.setSizePolicy(sizePolicy)
         self.lab_max_cards.setMinimumSize(QtCore.QSize(80, 13))
         self.lab_max_cards.setMaximumSize(QtCore.QSize(80, 13))
@@ -142,7 +165,12 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_3.addWidget(self.lab_max_cards)
         self.verticalLayout_3.addLayout(self.horizontalLayout_3)
         self.numcards_layout.addLayout(self.verticalLayout_3)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            20,
+            20,
+            QtWidgets.QSizePolicy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Minimum,
+        )
         self.numcards_layout.addItem(spacerItem1)
         self.gridLayout.addLayout(self.numcards_layout, 0, 0, 1, 1)
         self.verticalLayout_4 = QtWidgets.QVBoxLayout()
@@ -152,10 +180,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.checkBox_match_q = QtWidgets.QCheckBox(self.frame)
         self.checkBox_match_q.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_match_q.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_match_q.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_match_q.setSizePolicy(sizePolicy)
         self.checkBox_match_q.setMinimumSize(QtCore.QSize(0, 13))
         self.checkBox_match_q.setMaximumSize(QtCore.QSize(16777215, 15))
@@ -169,10 +201,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_4.addWidget(self.checkBox_match_q)
         self.lab_matched_desc = QtWidgets.QLabel(self.frame)
         self.lab_matched_desc.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_matched_desc.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_matched_desc.sizePolicy().hasHeightForWidth()
+        )
         self.lab_matched_desc.setSizePolicy(sizePolicy)
         self.lab_matched_desc.setMaximumSize(QtCore.QSize(185, 16777215))
         self.lab_matched_desc.setAlignment(QtCore.Qt.AlignCenter)
@@ -183,13 +219,17 @@ class Ui_OptionsDialog(object):
         self.gridLayout.addLayout(self.verticalLayout_4, 2, 0, 1, 1)
         self.verticalLayout_14.addLayout(self.gridLayout)
         self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_11.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.horizontalLayout_11.setSizeConstraint(
+            QtWidgets.QLayout.SetDefaultConstraint
+        )
         self.horizontalLayout_11.setContentsMargins(-1, -1, 0, -1)
         self.horizontalLayout_11.setSpacing(4)
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
         self.frame_ctype = QtWidgets.QFrame(self.frame)
         self.frame_ctype.setEnabled(True)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame_ctype.sizePolicy().hasHeightForWidth())
@@ -216,7 +256,9 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_17.setSpacing(0)
         self.horizontalLayout_17.setObjectName("horizontalLayout_17")
         self.lab_cardtype = QtWidgets.QLabel(self.frame_ctype)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lab_cardtype.sizePolicy().hasHeightForWidth())
@@ -236,10 +278,14 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_18.setSpacing(0)
         self.horizontalLayout_18.setObjectName("horizontalLayout_18")
         self.lab_cardtype_2 = QtWidgets.QLabel(self.frame_ctype)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_cardtype_2.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_cardtype_2.sizePolicy().hasHeightForWidth()
+        )
         self.lab_cardtype_2.setSizePolicy(sizePolicy)
         self.lab_cardtype_2.setMinimumSize(QtCore.QSize(0, 26))
         self.lab_cardtype_2.setMaximumSize(QtCore.QSize(70, 28))
@@ -248,7 +294,7 @@ class Ui_OptionsDialog(object):
         font.setBold(False)
         font.setWeight(50)
         self.lab_cardtype_2.setFont(font)
-        self.lab_cardtype_2.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        self.lab_cardtype_2.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop)
         self.lab_cardtype_2.setWordWrap(False)
         self.lab_cardtype_2.setObjectName("lab_cardtype_2")
         self.horizontalLayout_18.addWidget(self.lab_cardtype_2)
@@ -259,10 +305,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_15.setSpacing(10)
         self.verticalLayout_15.setObjectName("verticalLayout_15")
         self.checkBox_card_learn = QtWidgets.QCheckBox(self.frame_ctype)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_card_learn.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_card_learn.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_card_learn.setSizePolicy(sizePolicy)
         self.checkBox_card_learn.setMaximumSize(QtCore.QSize(16777215, 13))
         font = QtGui.QFont()
@@ -275,10 +325,14 @@ class Ui_OptionsDialog(object):
         self.checkBox_card_learn.setObjectName("checkBox_card_learn")
         self.verticalLayout_15.addWidget(self.checkBox_card_learn)
         self.checkBox_newANDreview = QtWidgets.QCheckBox(self.frame_ctype)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_newANDreview.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_newANDreview.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_newANDreview.setSizePolicy(sizePolicy)
         self.checkBox_newANDreview.setMaximumSize(QtCore.QSize(60, 13))
         font = QtGui.QFont()
@@ -290,10 +344,14 @@ class Ui_OptionsDialog(object):
         self.checkBox_newANDreview.setObjectName("checkBox_newANDreview")
         self.verticalLayout_15.addWidget(self.checkBox_newANDreview)
         self.checkBox_card_new = QtWidgets.QCheckBox(self.frame_ctype)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_card_new.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_card_new.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_card_new.setSizePolicy(sizePolicy)
         self.checkBox_card_new.setMaximumSize(QtCore.QSize(16777215, 13))
         font = QtGui.QFont()
@@ -309,7 +367,9 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_11.addWidget(self.frame_ctype)
         self.frame_corder = QtWidgets.QFrame(self.frame)
         self.frame_corder.setEnabled(True)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame_corder.sizePolicy().hasHeightForWidth())
@@ -336,10 +396,14 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_14.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_14.setObjectName("horizontalLayout_14")
         self.lab_cardtype_3 = QtWidgets.QLabel(self.frame_corder)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_cardtype_3.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_cardtype_3.sizePolicy().hasHeightForWidth()
+        )
         self.lab_cardtype_3.setSizePolicy(sizePolicy)
         self.lab_cardtype_3.setMinimumSize(QtCore.QSize(0, 13))
         self.lab_cardtype_3.setMaximumSize(QtCore.QSize(83, 18))
@@ -356,10 +420,14 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_16.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout_16.setObjectName("horizontalLayout_16")
         self.lab_cardtype_4 = QtWidgets.QLabel(self.frame_corder)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_cardtype_4.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_cardtype_4.sizePolicy().hasHeightForWidth()
+        )
         self.lab_cardtype_4.setSizePolicy(sizePolicy)
         self.lab_cardtype_4.setMinimumSize(QtCore.QSize(0, 26))
         self.lab_cardtype_4.setMaximumSize(QtCore.QSize(80, 25))
@@ -368,7 +436,7 @@ class Ui_OptionsDialog(object):
         font.setBold(False)
         font.setWeight(50)
         self.lab_cardtype_4.setFont(font)
-        self.lab_cardtype_4.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        self.lab_cardtype_4.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop)
         self.lab_cardtype_4.setWordWrap(False)
         self.lab_cardtype_4.setObjectName("lab_cardtype_4")
         self.horizontalLayout_16.addWidget(self.lab_cardtype_4)
@@ -380,10 +448,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_17.setSpacing(6)
         self.verticalLayout_17.setObjectName("verticalLayout_17")
         self.radioButton_random = QtWidgets.QRadioButton(self.frame_corder)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.radioButton_random.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.radioButton_random.sizePolicy().hasHeightForWidth()
+        )
         self.radioButton_random.setSizePolicy(sizePolicy)
         self.radioButton_random.setMaximumSize(QtCore.QSize(16777215, 13))
         font = QtGui.QFont()
@@ -396,10 +468,14 @@ class Ui_OptionsDialog(object):
         self.radioButton_random.setObjectName("radioButton_random")
         self.verticalLayout_17.addWidget(self.radioButton_random)
         self.radioButton_due = QtWidgets.QRadioButton(self.frame_corder)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.radioButton_due.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.radioButton_due.sizePolicy().hasHeightForWidth()
+        )
         self.radioButton_due.setSizePolicy(sizePolicy)
         self.radioButton_due.setMaximumSize(QtCore.QSize(16777215, 13))
         font = QtGui.QFont()
@@ -411,10 +487,14 @@ class Ui_OptionsDialog(object):
         self.radioButton_due.setObjectName("radioButton_due")
         self.verticalLayout_17.addWidget(self.radioButton_due)
         self.radioButton_odue = QtWidgets.QRadioButton(self.frame_corder)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.radioButton_odue.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.radioButton_odue.sizePolicy().hasHeightForWidth()
+        )
         self.radioButton_odue.setSizePolicy(sizePolicy)
         self.radioButton_odue.setMinimumSize(QtCore.QSize(22, 0))
         self.radioButton_odue.setMaximumSize(QtCore.QSize(16777215, 22))
@@ -437,10 +517,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_20.setObjectName("verticalLayout_20")
         self.checkBox_card_mature = QtWidgets.QCheckBox(self.frame)
         self.checkBox_card_mature.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_card_mature.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_card_mature.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_card_mature.setSizePolicy(sizePolicy)
         self.checkBox_card_mature.setMinimumSize(QtCore.QSize(0, 13))
         self.checkBox_card_mature.setMaximumSize(QtCore.QSize(16777215, 18))
@@ -461,10 +545,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_21.setSpacing(1)
         self.verticalLayout_21.setObjectName("verticalLayout_21")
         self.checkBox_apply_resched = QtWidgets.QCheckBox(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_apply_resched.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_apply_resched.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_apply_resched.setSizePolicy(sizePolicy)
         self.checkBox_apply_resched.setMinimumSize(QtCore.QSize(0, 20))
         self.checkBox_apply_resched.setMaximumSize(QtCore.QSize(16777215, 20))
@@ -479,10 +567,14 @@ class Ui_OptionsDialog(object):
         self.checkBox_apply_resched.setObjectName("checkBox_apply_resched")
         self.verticalLayout_21.addWidget(self.checkBox_apply_resched)
         self.lab_based_on_answers = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_based_on_answers.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_based_on_answers.sizePolicy().hasHeightForWidth()
+        )
         self.lab_based_on_answers.setSizePolicy(sizePolicy)
         self.lab_based_on_answers.setMinimumSize(QtCore.QSize(0, 20))
         self.lab_based_on_answers.setMaximumSize(QtCore.QSize(16777215, 22))
@@ -497,10 +589,14 @@ class Ui_OptionsDialog(object):
         self.lab_based_on_answers.setObjectName("lab_based_on_answers")
         self.verticalLayout_21.addWidget(self.lab_based_on_answers)
         self.checkBox_todayonly = QtWidgets.QCheckBox(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_todayonly.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_todayonly.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_todayonly.setSizePolicy(sizePolicy)
         self.checkBox_todayonly.setMinimumSize(QtCore.QSize(0, 18))
         self.checkBox_todayonly.setMaximumSize(QtCore.QSize(120, 18))
@@ -514,10 +610,14 @@ class Ui_OptionsDialog(object):
         self.checkBox_todayonly.setObjectName("checkBox_todayonly")
         self.verticalLayout_21.addWidget(self.checkBox_todayonly)
         self.lab_today_only_explain = QtWidgets.QLabel(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_today_only_explain.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_today_only_explain.sizePolicy().hasHeightForWidth()
+        )
         self.lab_today_only_explain.setSizePolicy(sizePolicy)
         self.lab_today_only_explain.setMinimumSize(QtCore.QSize(0, 13))
         self.lab_today_only_explain.setWordWrap(False)
@@ -526,10 +626,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_21.addWidget(self.lab_today_only_explain)
         self.checkBox_no_overdue = QtWidgets.QCheckBox(self.frame)
         self.checkBox_no_overdue.setEnabled(False)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_no_overdue.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_no_overdue.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_no_overdue.setSizePolicy(sizePolicy)
         self.checkBox_no_overdue.setMinimumSize(QtCore.QSize(0, 18))
         self.checkBox_no_overdue.setMaximumSize(QtCore.QSize(220, 18))
@@ -548,10 +652,14 @@ class Ui_OptionsDialog(object):
         self.verticalLayout_13.setSpacing(0)
         self.verticalLayout_13.setObjectName("verticalLayout_13")
         self.checkBox_joins = QtWidgets.QCheckBox(self.frame)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.checkBox_joins.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.checkBox_joins.sizePolicy().hasHeightForWidth()
+        )
         self.checkBox_joins.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -569,7 +677,9 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout_5.setContentsMargins(40, -1, 40, 0)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.but_apply = QtWidgets.QPushButton(OptionsDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.but_apply.sizePolicy().hasHeightForWidth())
@@ -588,13 +698,19 @@ class Ui_OptionsDialog(object):
         self.horizontalLayout.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem2 = QtWidgets.QSpacerItem(40, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            40, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout.addItem(spacerItem2)
         self.label_version = myLabel(OptionsDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_version.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.label_version.sizePolicy().hasHeightForWidth()
+        )
         self.label_version.setSizePolicy(sizePolicy)
         self.label_version.setMinimumSize(QtCore.QSize(0, 9))
         self.label_version.setMaximumSize(QtCore.QSize(16777215, 10))
@@ -605,7 +721,9 @@ class Ui_OptionsDialog(object):
         font.setBold(False)
         font.setWeight(50)
         self.label_version.setFont(font)
-        self.label_version.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing)
+        self.label_version.setAlignment(
+            QtCore.Qt.AlignBottom | QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing
+        )
         self.label_version.setObjectName("label_version")
         self.horizontalLayout.addWidget(self.label_version)
         self.verticalLayout.addLayout(self.horizontalLayout)
@@ -619,32 +737,53 @@ class Ui_OptionsDialog(object):
     def retranslateUi(self, OptionsDialog):
         _translate = QtCore.QCoreApplication.translate
         OptionsDialog.setWindowTitle(_translate("OptionsDialog", "Battle Anki Options"))
-        self.lab_opt_tit.setText(_translate("OptionsDialog", "Please note: some older, infequently used options and future options are temporarily disabled."))
+        self.lab_opt_tit.setText(
+            _translate(
+                "OptionsDialog",
+                "Please note: some older, infequently used options and future options are temporarily disabled.",
+            )
+        )
         self.spinbox_bdecksize_opts.setSuffix(_translate("OptionsDialog", " cards"))
         self.lab_max_cards.setText(_translate("OptionsDialog", "Max 500 cards"))
         self.checkBox_match_q.setText(_translate("OptionsDialog", "Matched Deck?"))
-        self.lab_matched_desc.setText(_translate("OptionsDialog", "Identical cards for both players"))
+        self.lab_matched_desc.setText(
+            _translate("OptionsDialog", "Identical cards for both players")
+        )
         self.lab_cardtype.setText(_translate("OptionsDialog", "Card Type"))
-        self.lab_cardtype_2.setText(_translate("OptionsDialog", "for\n"
-"both players"))
+        self.lab_cardtype_2.setText(_translate("OptionsDialog", "for\n" "both players"))
         self.checkBox_card_learn.setText(_translate("OptionsDialog", "Review"))
         self.checkBox_newANDreview.setText(_translate("OptionsDialog", "Both"))
         self.checkBox_card_new.setText(_translate("OptionsDialog", "New"))
         self.lab_cardtype_3.setText(_translate("OptionsDialog", "Card Order"))
-        self.lab_cardtype_4.setText(_translate("OptionsDialog", "for\n"
-"you only"))
+        self.lab_cardtype_4.setText(_translate("OptionsDialog", "for\n" "you only"))
         self.radioButton_random.setText(_translate("OptionsDialog", "Random"))
         self.radioButton_due.setText(_translate("OptionsDialog", "Order Due"))
-        self.radioButton_odue.setText(_translate("OptionsDialog", "Relative\n"
-"Overdueness"))
-        self.checkBox_card_mature.setText(_translate("OptionsDialog", "Mature cards only"))
-        self.checkBox_apply_resched.setText(_translate("OptionsDialog", "Apply rescheduling?"))
-        self.lab_based_on_answers.setText(_translate("OptionsDialog", "if left unchecked, these\n"
-"cards won\'t count"))
+        self.radioButton_odue.setText(
+            _translate("OptionsDialog", "Relative\n" "Overdueness")
+        )
+        self.checkBox_card_mature.setText(
+            _translate("OptionsDialog", "Mature cards only")
+        )
+        self.checkBox_apply_resched.setText(
+            _translate("OptionsDialog", "Apply rescheduling?")
+        )
+        self.lab_based_on_answers.setText(
+            _translate(
+                "OptionsDialog", "if left unchecked, these\n" "cards won't count"
+            )
+        )
         self.checkBox_todayonly.setText(_translate("OptionsDialog", "Bailey Mode"))
-        self.lab_today_only_explain.setText(_translate("OptionsDialog", "cards due today and overdue"))
-        self.checkBox_no_overdue.setText(_translate("OptionsDialog", "Exclude overdues"))
-        self.checkBox_joins.setText(_translate("OptionsDialog", "Accept joins while in battle"))
+        self.lab_today_only_explain.setText(
+            _translate("OptionsDialog", "cards due today and overdue")
+        )
+        self.checkBox_no_overdue.setText(
+            _translate("OptionsDialog", "Exclude overdues")
+        )
+        self.checkBox_joins.setText(
+            _translate("OptionsDialog", "Accept joins while in battle")
+        )
         self.but_apply.setText(_translate("OptionsDialog", "Apply"))
         self.label_version.setText(_translate("OptionsDialog", "v2.08"))
+
+
 from .myclass import myLabel

@@ -34,7 +34,9 @@ class Ui_AskDialog(object):
     def setupUi(self, AskDialog):
         AskDialog.setObjectName("AskDialog")
         AskDialog.resize(330, 370)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(AskDialog.sizePolicy().hasHeightForWidth())
@@ -42,21 +44,29 @@ class Ui_AskDialog(object):
         AskDialog.setMinimumSize(QtCore.QSize(330, 370))
         AskDialog.setMaximumSize(QtCore.QSize(330, 370))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+        )
         AskDialog.setWindowIcon(icon)
         self.button_ask_BD = QtWidgets.QDialogButtonBox(AskDialog)
         self.button_ask_BD.setGeometry(QtCore.QRect(80, 310, 171, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_ask_BD.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.button_ask_BD.sizePolicy().hasHeightForWidth()
+        )
         self.button_ask_BD.setSizePolicy(sizePolicy)
         self.button_ask_BD.setMaximumSize(QtCore.QSize(200, 200))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.button_ask_BD.setFont(font)
         self.button_ask_BD.setOrientation(QtCore.Qt.Horizontal)
-        self.button_ask_BD.setStandardButtons(QtWidgets.QDialogButtonBox.No|QtWidgets.QDialogButtonBox.Yes)
+        self.button_ask_BD.setStandardButtons(
+            QtWidgets.QDialogButtonBox.No | QtWidgets.QDialogButtonBox.Yes
+        )
         self.button_ask_BD.setCenterButtons(True)
         self.button_ask_BD.setObjectName("button_ask_BD")
         self.lab_ask_bd_text = QtWidgets.QLabel(AskDialog)
@@ -72,7 +82,9 @@ class Ui_AskDialog(object):
         font = QtGui.QFont()
         font.setPointSize(11)
         self.lab_ask_bd_options.setFont(font)
-        self.lab_ask_bd_options.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lab_ask_bd_options.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
         self.lab_ask_bd_options.setWordWrap(True)
         self.lab_ask_bd_options.setObjectName("lab_ask_bd_options")
         self.lab_ask_bd_text_2 = QtWidgets.QLabel(AskDialog)
@@ -88,7 +100,9 @@ class Ui_AskDialog(object):
         font = QtGui.QFont()
         font.setPointSize(11)
         self.lab_ask_bd_options_text.setFont(font)
-        self.lab_ask_bd_options_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_ask_bd_options_text.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_ask_bd_options_text.setWordWrap(True)
         self.lab_ask_bd_options_text.setObjectName("lab_ask_bd_options_text")
         self.lab_ask_bd_title_2 = QtWidgets.QLabel(AskDialog)
@@ -100,23 +114,33 @@ class Ui_AskDialog(object):
         self.lab_ask_bd_title_2.setObjectName("lab_ask_bd_title_2")
         self.lab_ask_bd_title = QtWidgets.QLabel(AskDialog)
         self.lab_ask_bd_title.setGeometry(QtCore.QRect(170, 50, 149, 29))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_ask_bd_title.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_ask_bd_title.sizePolicy().hasHeightForWidth()
+        )
         self.lab_ask_bd_title.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(12)
         self.lab_ask_bd_title.setFont(font)
-        self.lab_ask_bd_title.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lab_ask_bd_title.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter
+        )
         self.lab_ask_bd_title.setWordWrap(False)
         self.lab_ask_bd_title.setObjectName("lab_ask_bd_title")
         self.lab_ask_bd_name = QtWidgets.QLabel(AskDialog)
         self.lab_ask_bd_name.setGeometry(QtCore.QRect(10, 50, 160, 29))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lab_ask_bd_name.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.lab_ask_bd_name.sizePolicy().hasHeightForWidth()
+        )
         self.lab_ask_bd_name.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(12)
@@ -127,7 +151,9 @@ class Ui_AskDialog(object):
         self.lab_ask_bd_name.setStyleSheet("")
         self.lab_ask_bd_name.setFrameShadow(QtWidgets.QFrame.Plain)
         self.lab_ask_bd_name.setScaledContents(False)
-        self.lab_ask_bd_name.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lab_ask_bd_name.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.lab_ask_bd_name.setWordWrap(True)
         self.lab_ask_bd_name.setObjectName("lab_ask_bd_name")
 
@@ -139,16 +165,25 @@ class Ui_AskDialog(object):
     def retranslateUi(self, AskDialog):
         _translate = QtCore.QCoreApplication.translate
         AskDialog.setWindowTitle(_translate("AskDialog", "Battle Anki Request"))
-        self.lab_ask_bd_text.setText(_translate("AskDialog", "studying a Battle Deck with these options:"))
+        self.lab_ask_bd_text.setText(
+            _translate("AskDialog", "studying a Battle Deck with these options:")
+        )
         self.lab_ask_bd_options.setText(_translate("AskDialog", "(options)"))
-        self.lab_ask_bd_text_2.setText(_translate("AskDialog", "Would you like to play?"))
-        self.lab_ask_bd_options_text.setText(_translate("AskDialog", "Deck size:\n"
-"Matched (identical cards):\n"
-"New cards:\n"
-"Review cards:\n"
-"Mature cards:\n"
-"Reschedule based on answers:\n"
-"Due today only:"))
+        self.lab_ask_bd_text_2.setText(
+            _translate("AskDialog", "Would you like to play?")
+        )
+        self.lab_ask_bd_options_text.setText(
+            _translate(
+                "AskDialog",
+                "Deck size:\n"
+                "Matched (identical cards):\n"
+                "New cards:\n"
+                "Review cards:\n"
+                "Mature cards:\n"
+                "Reschedule based on answers:\n"
+                "Due today only:",
+            )
+        )
         self.lab_ask_bd_title_2.setText(_translate("AskDialog", "Hello,"))
         self.lab_ask_bd_title.setText(_translate("AskDialog", " would like your help"))
         self.lab_ask_bd_name.setText(_translate("AskDialog", "(name)"))
