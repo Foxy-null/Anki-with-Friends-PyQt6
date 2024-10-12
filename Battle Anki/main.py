@@ -566,7 +566,7 @@ class MainWindow:
         if repl:
             # back_len_join = len(os.path.join(mw.pm.name, "collection.media"))
             # com_root = os.Path.cwd()()[:-back_len_join]
-            source_fold = os.path.join(mw.pm.addonFolder(), "613520216", "res")
+            source_fold = os.path.join(mw.pm.addonFolder(), BA_FOLDER_NAME, "res")
             source = os.path.join(source_fold, res_name)
             dest = f"{os.getcwd()}"
             shutil.move(source, end_dest)
@@ -576,7 +576,7 @@ class MainWindow:
             if os.path.isfile(f"{end_dest}") is False:
                 # back_len_join = len(os.path.join(mw.pm.name, "collection.media"))
                 # com_root = os.Path.cwd()()[:-back_len_join]
-                source_fold = os.path.join(mw.pm.addonFolder(), "613520216", "res")
+                source_fold = os.path.join(mw.pm.addonFolder(), BA_FOLDER_NAME, "res")
                 source = os.path.join(source_fold, res_name)
                 dest = f"{os.getcwd()}"
                 shutil.move(source, dest)

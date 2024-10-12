@@ -25,9 +25,9 @@ from aqt import mw
 DEBUG_MODE = False  # True      # todo: debug here with True/False
 
 
-BA_VER = "2.90"  # #####################################################################################################
-BA_FOLDER_NAME = "613520216"
-# ba_path = os.path.join(os.getcwd(), '..', '..', 'addons21', '613520216')
+BA_VER = "2.91"  # #####################################################################################################
+BA_FOLDER_NAME = os.path.dirname(os.path.abspath(__file__))
+# ba_path = os.path.join(os.getcwd(), '..', '..', 'addons21', BA_FOLDER_NAME)
 BA_REL_DIR = os.path.join(mw.pm.addonFolder(), BA_FOLDER_NAME)
 
 LOG_NM = "B_A.log"

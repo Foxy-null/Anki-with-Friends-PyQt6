@@ -1,16 +1,16 @@
 [
     {
         "Ev": "",
-        "EvTi": "10/12/24 18:53:43",
+        "EvTi": "10/13/24 05:33:27",
         "EvTyp": "",
-        "LLt": "10/12/24 18:53:43",
-        "LSt": 1728726820,
+        "LLt": "10/13/24 05:33:27",
+        "LSt": 1728765205,
         "OPs": {},
-        "PEv": 18,
-        "PEvTi": "10/12/24 18:53:43",
+        "PEv": 15,
+        "PEvTi": "10/13/24 05:33:27",
         "PEvTyp": "",
-        "PID": 911,
-        "cc": 179,
+        "PID": 0,
+        "cc": 180,
         "name": "log_helper"
     },
     {
@@ -32,7 +32,7 @@
         "card_order_str": "Order of relative overdueness",
         "card_type_str": "Reviews only",
         "cards_left": 0,
-        "cards_today": 21,
+        "cards_today": 1,
         "chal_index": 0,
         "challenger_ip": [],
         "challenger_name": [],
@@ -46,7 +46,7 @@
         "isloading": false,
         "joiners_box": true,
         "learn_box": true,
-        "loc_rem_ip": "('192.168.0.119', 13603)",
+        "loc_rem_ip": "('192.168.0.22', 56707)",
         "made_count": null,
         "make_deck_problem": false,
         "matched_box": false,
@@ -75,12 +75,12 @@
         "spinbox_decksize": 100,
         "startup": false,
         "terms_of_battle": "",
-        "time_secs": 158,
-        "time_today": "0:02",
+        "time_secs": 6,
+        "time_today": "0:00",
         "today_only": true,
         "told_problem": false,
         "tried": 0,
         "will_sync": false,
-        "window_open": false
+        "window_open": true
     }
 ]
