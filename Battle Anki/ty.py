@@ -1,6 +1,7 @@
-#                     Copyright © 2020 Joseph Policarpio
+#                     Copyright © 2020-2022 Joseph Policarpio
 
-#     Battle Anki, an addon for Anki, a program for studying flash cards.
+#     Anki with Friends (previously Battle Anki) is an add-on for Anki,
+#     a program for studying flash cards.
 
 #     This file is part of Battle Anki
 #
@@ -18,56 +19,89 @@
 #     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 
 class Ui_Dialog_ty(object):
     def setupUi(self, Dialog_ty):
         Dialog_ty.setObjectName("Dialog_ty")
-        Dialog_ty.resize(315, 160)
+        Dialog_ty.resize(574, 498)
         icon = QtGui.QIcon()
         icon.addPixmap(
-            QtGui.QPixmap("battle_anki_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
+            QtGui.QPixmap("battle_anki_icon.png"),
+            QtGui.QIcon.Mode.Normal,
+            QtGui.QIcon.State.Off,
         )
         Dialog_ty.setWindowIcon(icon)
+        self.verticalLayout = QtWidgets.QVBoxLayout(Dialog_ty)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem = QtWidgets.QSpacerItem(
+            50,
+            20,
+            QtWidgets.QSizePolicy.Policy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Policy.Minimum,
+        )
+        self.horizontalLayout.addItem(spacerItem)
         self.lab_text = QtWidgets.QLabel(Dialog_ty)
-        self.lab_text.setGeometry(QtCore.QRect(40, 20, 241, 61))
         font = QtGui.QFont()
-        font.setPointSize(11)
+        font.setPointSize(14)
         self.lab_text.setFont(font)
-        self.lab_text.setAlignment(QtCore.Qt.AlignCenter)
+        self.lab_text.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.lab_text.setWordWrap(True)
         self.lab_text.setObjectName("lab_text")
+        self.horizontalLayout.addWidget(self.lab_text)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            50,
+            20,
+            QtWidgets.QSizePolicy.Policy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Policy.Minimum,
+        )
+        self.horizontalLayout.addItem(spacerItem1)
+        self.verticalLayout.addLayout(self.horizontalLayout)
         self.lab_link = QtWidgets.QLabel(Dialog_ty)
-        self.lab_link.setGeometry(QtCore.QRect(30, 100, 261, 31))
         font = QtGui.QFont()
         font.setPointSize(15)
         self.lab_link.setFont(font)
-        self.lab_link.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.lab_link.setInputMethodHints(QtCore.Qt.ImhNone)
-        self.lab_link.setTextFormat(QtCore.Qt.RichText)
+        self.lab_link.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
+        self.lab_link.setInputMethodHints(QtCore.Qt.InputMethodHint.ImhNone)
+        self.lab_link.setTextFormat(QtCore.Qt.TextFormat.RichText)
         self.lab_link.setScaledContents(False)
-        self.lab_link.setAlignment(QtCore.Qt.AlignCenter)
+        self.lab_link.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.lab_link.setOpenExternalLinks(True)
-        self.lab_link.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
+        self.lab_link.setTextInteractionFlags(
+            QtCore.Qt.TextInteractionFlag.TextBrowserInteraction
+        )
         self.lab_link.setObjectName("lab_link")
+        self.verticalLayout.addWidget(self.lab_link)
+        self.verticalLayout.setStretch(0, 2)
+        self.verticalLayout.setStretch(1, 1)
 
         self.retranslateUi(Dialog_ty)
         QtCore.QMetaObject.connectSlotsByName(Dialog_ty)
 
     def retranslateUi(self, Dialog_ty):
         _translate = QtCore.QCoreApplication.translate
-        Dialog_ty.setWindowTitle(_translate("Dialog_ty", "TYVM from Battle Anki"))
+        Dialog_ty.setWindowTitle(
+            _translate("Dialog_ty", "Battle Anki Version 3 Coming Soon!")
+        )
         self.lab_text.setText(
             _translate(
                 "Dialog_ty",
-                "Thank you for playing Battle Anki!\n"
-                "If you enjoyed the experience,\n"
-                "buy me a coffee?",
+                "Battle Anki is currently running a research study...\n"
+                "\n"
+                "Unfortunately, the public version of Battle Anki will be unavailable during that time.\n"
+                "\n"
+                "IF YOU ARE ENROLLED IN THE STUDY, please check for an update on Sunday 11/7/2021 evening.\n"
+                "\n"
+                "\n"
+                "For more information visit our website:",
             )
         )
         self.lab_link.setText(
             _translate(
                 "Dialog_ty",
-                '<a href="https://ko-fi.com/battleanki">Ko-fi.com/BattleAnki</a>',
+                '<html><head/><body><p><a href="https://battleanki.com/"><span style=" text-decoration: underline; color:#0000ff;">www.battleanki.com</span></a></p><p><br/></p><p><a href="https://ankiweb.net/shared/info/613520216"><span style=" text-decoration: underline; color:#0000ff;">Battle Anki add-on page (Ankiweb)</span></a></p></body></html>',
             )
         )

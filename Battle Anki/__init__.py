@@ -1,5 +1,9 @@
-from . import ty
+from . import consts
+from . import vars
+from . import dicts
 from . import myclass
+from . import ty
+from . import isd
 from . import OptDia
 from . import ask_BD
 from . import BAmainwin
@@ -7,9 +11,10 @@ from . import battle_conf
 from . import reb_comms
 from . import main
 
-#                     Copyright © 2020 Joseph Policarpio
+#                     Copyright © 2020-2022 Joseph Policarpio
 
-#     Battle Anki, an addon for Anki, a program for studying flash cards.
+#     Anki with Friends (previously Battle Anki) is an add-on for Anki,
+#     a program for studying flash cards.
 
 #     This file is part of Battle Anki
 #
