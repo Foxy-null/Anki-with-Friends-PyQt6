@@ -4631,7 +4631,7 @@ def reviewer_will_close():
 action = QAction("Anki with Friends...", mw)
 action.triggered.connect(lambda: battle_anki_clicked())
 # action.triggered.connect(lambda: test())
-mw.form.menuTools.addAction(action)
+mw.form.menubar.addAction(action)
 
 #   HOOKS
 gui_hooks.main_window_did_init.append(mw_init)
