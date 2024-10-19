@@ -1525,6 +1525,7 @@ self.ui.progressBar_p{ba_var['acc_list'][ded]}.update()"""
         self.ui.stackedWidget.setCurrentWidget(self.ui.page_1)
         self.ui.spinbox_bdecksize_bw.setValue(ba_var["decksize"])
         self.main_win.show()
+        self.main_win.activateWindow()
         self.ui.page_1.show()
         self.ui.page_1.setFocus()
         logger_ui.info("showHome completed")
